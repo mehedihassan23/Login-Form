@@ -1,33 +1,132 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to right, rgb(174, 214, 241), rgb(52, 152, 219) );
+    background: linear-gradient(to right, rgb(174, 214, 241), rgb(52, 152, 219));
 }
 
-.container .login-form{
+.container .login-form {
     height: 30rem;
-   width: 20rem;
-   padding: 1rem;
-   background-color: rgb(255, 255, 255);
-   border: 2px solid green;
+    width: 20rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    position: relative;
 }
 
-.container .login-form .heading h1{
+.container .login-form .heading h1 {
     text-align: center;
     text-transform: capitalize;
     color: rgb(0, 0, 0);
-   
+    margin-bottom: 2.5rem;
+    ;
     font-weight: 500;
 }
 
+.container .login-form form {
+    margin: 0 2rem;
+}
 
+.container .login-form form .input-div .input {
+    position: relative;
+    height: 2rem;
+    width: 10rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 1.5rem;
+}
+
+.container .login-form form .input-div .input label {
+    position: absolute;
+    left: 0;
+    bottom: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: gray;
+
+}
+
+.container .login-form form .input-div .input input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    left: 0;
+    bottom: 0;
+    border: 0;
+    outline: 0;
+    z-index: 10;
+    background: none;
+}
+
+.forgot-option {
+    font-weight: 300;
+    text-align: right;
+    margin: 1rem 0;
+}
+
+.forgot-option:hover {
+    text-decoration: underline;
+}
+
+.login {
+    padding: 0.5rem 5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgb(214, 234, 248);
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(241, 83, 83), rgb(214, 234, 248));
+    transition: all 0.5s;
+    color: white;
+}
+
+.login:hover {
+    background: linear-gradient(to right, rgb(247, 144, 144), rgb(131, 198, 247));
+}
+
+.signup-option {
+    position: absolute;
+    right: 0;
+    bottom: 1.5rem;
+    width: 100%;
+}
+
+.signup-option>p {
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    position: relative;
+    text-decoration: underline;
+}
+
+.signup-option>p:hover {
+    color: gray;
+}
+
+.signup-option .icon {
+    display: flex;
+    justify-content: center;
+}
+
+.signup-option .icon p {
+    padding: 10px;
+}
+
+.signup-option .icon p i {
+    font-size: 2rem;
+    color: blue;
+    transition: all 0.5;
+}
+
+.signup-option .icon p i:hover {
+    color: rgb(113, 113, 253);
+}
